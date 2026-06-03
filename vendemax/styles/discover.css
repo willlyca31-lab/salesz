@@ -583,8 +583,10 @@ footer p {
     .hero-text {
 
         width: 50%;
+        display: none;
     }
 }
+    
 
 .hero-products {
 
