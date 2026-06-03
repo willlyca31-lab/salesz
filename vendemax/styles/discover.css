@@ -1,0 +1,434 @@
+
+:root {
+
+    --azul-principal: #0071ce;
+    --azul-secundario: #004c91;
+
+    --amarillo: #ffc220;
+
+    --blanco: #ffffff;
+
+    --gris-claro: #f5f5f5;
+
+    --texto: #222222;
+
+    --gris-texto: #555555;
+}
+
+/* ---------------- RESET ---------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------- BODY ---------------- */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: var(--gris-claro);
+
+    color: var(--texto);
+
+    line-height: 1.5;
+}
+
+/* ---------------- HEADER ---------------- */
+
+header {
+
+    background-color: var(--azul-principal);
+
+    color: var(--blanco);
+
+    padding: 1rem;
+}
+
+.top-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+/* ---------------- LOGO ---------------- */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.logo img {
+
+    width: 60px;
+
+    height: auto;
+}
+
+.logo p {
+
+    font-size: 1.5rem;
+
+    font-weight: bold;
+}
+
+.logo span {
+
+    display: block;
+
+    font-size: 1rem;
+}
+
+/* ---------------- MENU BUTTON ---------------- */
+
+#menu {
+
+    background: none;
+
+    border: none;
+
+    color: var(--blanco);
+
+    font-size: 2rem;
+
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+/* ---------------- NAVIGATION ---------------- */
+
+.navigation {
+
+    display: none;
+
+    flex-direction: column;
+
+    list-style: none;
+
+    margin-top: 1rem;
+
+    gap: 1rem;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+
+    display: block;
+
+    padding: .8rem;
+
+    text-decoration: none;
+
+    background-color: var(--azul-secundario);
+
+    color: var(--blanco);
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.navigation a:hover {
+
+    background-color: var(--amarillo);
+
+    color: var(--texto);
+}
+
+.navigation .active {
+
+    background-color: var(--amarillo);
+
+    color: var(--texto);
+}
+
+/* ---------------- MAIN ---------------- */
+
+.discover-main {
+
+    padding: 1rem;
+}
+
+/* ---------------- VISITOR MESSAGE ---------------- */
+
+.visitor-message {
+
+    background-color: var(--blanco);
+
+    padding: 2rem;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    margin-bottom: 2rem;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.visitor-message h1 {
+
+    color: var(--azul-principal);
+
+    margin-bottom: 1rem;
+
+    font-size: 2rem;
+}
+
+.visitor-message p {
+
+    color: var(--gris-texto);
+
+    margin-bottom: .5rem;
+}
+
+#visit-message {
+
+    font-weight: bold;
+
+    color: var(--azul-secundario);
+}
+
+/* ---------------- GRID ---------------- */
+
+.discover-grid {
+
+    display: grid;
+
+    gap: 1.5rem;
+
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+/* ---------------- CARDS ---------------- */
+
+.card {
+
+    background-color: var(--blanco);
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    padding: 1rem;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    transition: transform .3s ease;
+}
+
+.card h2 {
+
+    color: var(--azul-principal);
+
+    margin-bottom: .8rem;
+}
+
+.card figure {
+
+    margin-bottom: 1rem;
+}
+
+.card img {
+
+    width: 100%;
+
+    height: auto;
+
+    border-radius: 10px;
+
+    display: block;
+}
+
+.card address {
+
+    font-style: normal;
+
+    font-weight: bold;
+
+    color: var(--gris-texto);
+
+    margin-bottom: .8rem;
+}
+
+.card p {
+
+    margin-bottom: 1rem;
+}
+
+.card button {
+
+    width: 100%;
+
+    padding: .9rem;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: var(--amarillo);
+
+    color: var(--texto);
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.card button:hover {
+
+    background-color: #ffb000;
+}
+
+/* ---------------- GRID AREAS ---------------- */
+
+.card1 { grid-area: card1; }
+.card2 { grid-area: card2; }
+.card3 { grid-area: card3; }
+.card4 { grid-area: card4; }
+.card5 { grid-area: card5; }
+.card6 { grid-area: card6; }
+.card7 { grid-area: card7; }
+.card8 { grid-area: card8; }
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+
+    background-color: var(--azul-principal);
+
+    color: var(--blanco);
+
+    padding: 2rem 1rem;
+
+    margin-top: 3rem;
+
+    text-align: center;
+}
+
+footer h2 {
+
+    margin-bottom: 1rem;
+}
+
+footer p {
+
+    margin-bottom: .5rem;
+}
+
+/* ---------------- SOCIALS ---------------- */
+
+.socials {
+
+    margin: 1rem 0;
+}
+
+.socials a {
+
+    color: var(--amarillo);
+
+    text-decoration: none;
+
+    margin: 0 .5rem;
+
+    font-weight: bold;
+}
+
+.socials a:hover {
+
+    text-decoration: underline;
+}
+
+/* ---------------- HIDDEN ---------------- */
+
+.visually-hidden {
+
+    position: absolute;
+
+    left: -9999px;
+}
+
+/* ---------------- MEDIUM SCREEN ---------------- */
+
+@media screen and (min-width: 641px) {
+
+    .discover-grid {
+
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+}
+
+/* ---------------- LARGE SCREEN ---------------- */
+
+@media screen and (min-width: 1025px) {
+
+    .navigation {
+
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .discover-grid {
+
+        grid-template-areas:
+            "card1 card2 card3"
+            "card4 card5 card6"
+            "card7 card8 card8";
+    }
+
+    .card img:hover {
+
+        transform: scale(1.05);
+
+        transition: .3s ease;
+
+        filter: brightness(1.05);
+    }
+
+    .card:hover {
+
+        transform: translateY(-5px);
+    }
+}
