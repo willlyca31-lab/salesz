@@ -38,40 +38,28 @@ places.forEach((place, index) => {
 
 });
 
-const message = document.querySelector("#visit-message");
+const menuButton = document.querySelector("#menu");
 
-const lastVisit = localStorage.getItem("lastVisit");
+const navigation = document.querySelector(".navigation");
 
-const currentDate = Date.now();
+menuButton.addEventListener("click", () => {
 
-if (!lastVisit) {
+    navigation.classList.toggle("open");
 
-    message.textContent =
-        "¡Bienvenido a VendeMax!";
+    menuButton.classList.toggle("open");
+});
 
-} else {
 
-    const milliseconds = currentDate - Number(lastVisit);
+// CURRENT YEAR
 
-    const daysBetween = Math.floor(
-        milliseconds / 1000 / 60 / 60 / 24
-    );
+const year = document.querySelector("#currentyear");
 
-    if (daysBetween < 1) {
+year.textContent = new Date().getFullYear();
 
-        message.textContent =
-            "¡Qué bueno verte de nuevo!";
 
-    } else if (daysBetween === 1) {
+// LAST MODIFIED
 
-        message.textContent =
-            "Tu última visita fue hace 1 día.";
+const lastModified = document.querySelector("#lastModified");
 
-    } else {
-
-        message.textContent =
-            `Tu última visita fue hace ${daysBetween} días.`;
-    }
-}
-
-localStorage.setItem("lastVisit", currentDate);
+lastModified.textContent =
+    `Última actualización: ${document.lastModified}`;
