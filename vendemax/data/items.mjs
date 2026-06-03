@@ -4,14 +4,14 @@ export const places = [
         title: "Electrónica",
         address: "Tecnología y dispositivos",
         description: "Celulares, laptops, tablets y accesorios electrónicos.",
-        image: "images/electronica.webp"
+        image: "images/laptop.webp"
     },
 
     {
         title: "Supermercado",
         address: "Productos del hogar",
         description: "Compra alimentos, bebidas y artículos esenciales.",
-        image: "images/supermercado.webp"
+        image: "images/groceries.webp"
     },
 
     {
@@ -32,7 +32,7 @@ export const places = [
         title: "Videojuegos",
         address: "Gaming y entretenimiento",
         description: "Consolas, videojuegos y accesorios gamer.",
-        image: "images/videojuegos.webp"
+        image: "images/juegos.webp"
     },
 
     {
