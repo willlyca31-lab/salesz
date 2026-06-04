@@ -779,6 +779,8 @@ footer p {
     font-size: 2rem;
 
     margin-bottom: 1rem;
+
+    display: none;
 }
 
 .offers-intro {
@@ -867,6 +869,7 @@ footer p {
     .offers-overlay {
 
         width: 45%;
+        display: none;
     }
 }
 
@@ -890,6 +893,14 @@ footer p {
 
         display: none;
     }
+
+    .hero-overlay {
+    display: none;
+     }
+
+        .offers-overlay {
+            display: none;
+        }
 }
 
 .hero-overlay {
