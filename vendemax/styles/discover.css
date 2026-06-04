@@ -481,6 +481,7 @@ footer p {
     padding: 1.5rem;
 
     border-radius: 12px;
+    display: none;
 }
 
 .hero-text h1 {
