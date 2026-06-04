@@ -726,6 +726,8 @@ footer p {
     .hero-overlay {
 
         width: 45%;
+
+        display: none;
     }
 }
 
@@ -772,6 +774,8 @@ footer p {
     border-radius: 12px;
 
     width: 80%;
+
+    display: none;
 }
 
 .offers-overlay h1 {
