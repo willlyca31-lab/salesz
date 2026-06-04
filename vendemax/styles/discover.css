@@ -481,6 +481,7 @@ footer p {
     padding: 1.5rem;
 
     border-radius: 12px;
+
     display: none;
 }
 
@@ -584,6 +585,7 @@ footer p {
     .hero-text {
 
         width: 50%;
+
     }
 }
 
@@ -884,9 +886,18 @@ footer p {
     }
 
     .hero-text {
-        top: 0
+        top: 0;
 
+        display: none;
     }
+}
+
+.hero-overlay {
+    display: none;
+}
+
+.offers-overlay {
+    display: none;
 }
 
 
