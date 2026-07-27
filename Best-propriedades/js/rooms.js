@@ -5,7 +5,16 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!container) return;
 
     fetch("data/rooms.json")
-        .then(response => response.json())
+        .then(response => {
+
+            if (!response.ok) {
+                throw new Error("No se pudo cargar rooms.json");
+            }
+
+            return response.json();
+
+        })
+
         .then(rooms => {
 
             container.innerHTML = "";
@@ -17,10 +26,16 @@ document.addEventListener("DOMContentLoaded", () => {
                     .join("");
 
                 container.innerHTML += `
+
                     <article class="room-card">
 
-                        <div class="room-image">
-                            <img src="${room.image}" alt="${room.title}">
+                        <div class="room-image gallery-item">
+
+                            <img
+                                src="${room.image}"
+                                alt="${room.title}"
+                            >
+
                         </div>
 
                         <div class="room-content">
@@ -32,18 +47,27 @@ document.addEventListener("DOMContentLoaded", () => {
                             <h3>${room.title}</h3>
 
                             <p>
-                                <strong>${room.city}</strong><br>
+
+                                <strong>${room.city}</strong>
+
+                                <br>
+
                                 ${room.location}
+
                             </p>
 
                             <p>${room.description}</p>
 
                             <ul class="room-features">
+
                                 ${features}
+
                             </ul>
 
                             <div class="room-price">
+
                                 $${room.price.toLocaleString()} MXN / mes
+
                             </div>
 
                             <a
@@ -51,23 +75,30 @@ document.addEventListener("DOMContentLoaded", () => {
                                 class="btn btn-primary room-btn"
                                 target="_blank"
                             >
+
                                 Solicitar información
+
                             </a>
 
                         </div>
 
                     </article>
+
                 `;
+
             });
 
+            // Inicializar la galería después de crear las tarjetas
+            if (typeof initGallery === "function") {
+                initGallery();
+            }
+
         })
+
         .catch(error => {
+
             console.error("Error cargando rooms.json:", error);
+
         });
-
-        container.innerHTML = html;
-
-// Inicializar galería después de crear las habitaciones
-                   initGallery();
 
 });
