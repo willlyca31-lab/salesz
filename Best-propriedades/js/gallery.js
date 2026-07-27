@@ -173,3 +173,9 @@ document.addEventListener("DOMContentLoaded", () => {
     initGallery();
 
 });
+
+container.innerHTML = html;
+
+// Inicializar galería después de crear las habitaciones
+initGallery();
+
