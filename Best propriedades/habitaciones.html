@@ -1,0 +1,2022 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+
+<head>
+
+
+    <meta charset="UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>
+
+        Habitaciones | Best Rentas de Cuartos
+
+    </title>
+
+
+
+    <meta 
+        name="description"
+        content="Encuentra habitaciones en renta en Querétaro, San Miguel de Allende y Puerto Vallarta."
+    >
+
+
+
+
+
+    <!-- Bootstrap -->
+
+    <link
+
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+
+        rel="stylesheet"
+
+    >
+
+
+
+
+
+    <!-- Font Awesome -->
+
+    <link
+
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+
+        rel="stylesheet"
+
+    >
+
+
+
+
+
+    <!-- CSS Principal -->
+
+    <link
+
+        rel="stylesheet"
+
+        href="css/style.css"
+
+    >
+
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+    <!-- ==============================
+         NAVBAR
+    =============================== -->
+
+
+
+    <header>
+
+
+        <nav class="navbar">
+
+
+            <div class="container navbar-container">
+
+
+
+                <a
+
+                    href="index.html"
+
+                    class="logo"
+
+                >
+
+                    Best
+
+                    <span>
+
+                        Rentas
+
+                    </span>
+
+
+                </a>
+
+
+
+
+
+                <div class="nav-menu">
+
+
+
+                    <a
+
+                        href="index.html"
+
+                        data-translate="home"
+
+                    >
+
+                        Inicio
+
+                    </a>
+
+
+
+
+
+                    <a
+
+                        href="habitaciones.html"
+
+                        class="active"
+
+                        data-translate="rooms"
+
+                    >
+
+                        Habitaciones
+
+                    </a>
+
+
+
+
+
+                    <a
+
+                        href="ubicaciones.html"
+
+                        data-translate="locations"
+
+                    >
+
+                        Ubicaciones
+
+                    </a>
+
+
+
+
+
+                    <a
+
+                        href="contacto.html"
+
+                        data-translate="contact"
+
+                    >
+
+                        Contacto
+
+                    </a>
+
+
+
+
+
+
+
+                    <!-- Language -->
+
+
+                    <select
+
+                        id="language-selector"
+
+                    >
+
+
+                        <option value="es">
+
+                            🇪🇸 Español
+
+                        </option>
+
+
+
+                        <option value="en">
+
+                            🇺🇸 English
+
+                        </option>
+
+
+
+                        <option value="fr">
+
+                            🇫🇷 Français
+
+                        </option>
+
+
+
+                    </select>
+
+
+
+
+
+
+                    <!-- Dark Mode -->
+
+
+                    <button
+
+                        id="dark-mode-toggle"
+
+                        class="dark-toggle"
+
+                    >
+
+
+                        <i class="fa-solid fa-moon"></i>
+
+
+                    </button>
+
+
+
+                </div>
+
+
+
+
+
+
+                <div class="menu-toggle">
+
+
+                    <i class="fa-solid fa-bars"></i>
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+        </nav>
+
+
+
+    </header>
+
+
+
+
+
+
+
+    <!-- ==============================
+         HERO HABITACIONES
+    =============================== -->
+
+
+
+    <section class="hero rooms-hero">
+
+
+        <div class="container text-center">
+
+
+
+            <h1>
+
+                Encuentra tu habitación ideal
+
+            </h1>
+
+
+
+
+            <p>
+
+                Espacios cómodos, seguros y listos para vivir.
+
+            </p>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-- ==============================
+         FILTER SYSTEM
+    =============================== -->
+
+
+    <section class="container">
+
+
+        <div class="search-box">
+
+
+
+            <div class="search-item">
+
+
+                <label>
+
+                    Ubicación
+
+                </label>
+
+
+
+                <input
+
+                    id="search-location"
+
+                    type="text"
+
+                    placeholder="Buscar ciudad"
+
+                >
+
+
+            </div>
+
+
+
+
+
+
+            <div class="search-item">
+
+
+                <label>
+
+                    Tipo
+
+                </label>
+
+
+
+                <select
+
+                    id="room-type"
+
+                >
+
+
+
+                    <option value="all">
+
+                        Todas
+
+                    </option>
+
+
+
+
+                    <option value="individual">
+
+                        Individual
+
+                    </option>
+
+
+
+
+
+                    <option value="suite">
+
+                        Suite
+
+                    </option>
+
+
+
+
+
+                    <option value="shared">
+
+                        Compartida
+
+                    </option>
+
+
+
+
+                </select>
+
+
+            </div>
+
+
+
+
+
+
+            <div class="search-item">
+
+
+                <label>
+
+                    Precio máximo
+
+                </label>
+
+
+
+                <select
+
+                    id="price-range"
+
+                >
+
+
+                    <option value="all">
+
+                        Todos
+
+                    </option>
+
+
+
+                    <option value="5000">
+
+                        $5000
+
+                    </option>
+
+
+
+                    <option value="6000">
+
+                        $6000
+
+                    </option>
+
+
+
+                    <option value="7000">
+
+                        $7000
+
+                    </option>
+
+
+
+                </select>
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="search-item">
+
+
+                <label>
+
+                    Personas
+
+                </label>
+
+
+
+                <select
+
+                    id="capacity"
+
+                >
+
+
+                    <option value="all">
+
+                        Cualquier capacidad
+
+                    </option>
+
+
+
+                    <option value="1">
+
+                        1 persona
+
+                    </option>
+
+
+
+                    <option value="2">
+
+                        2 personas
+
+                    </option>
+
+
+                </select>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+        <p
+
+            id="results-count"
+
+            class="text-center mt-3"
+
+        >
+
+        </p>
+
+
+
+
+        <div
+
+            id="no-results"
+
+            class="text-center"
+
+            style="display:none"
+
+        >
+
+            <h3>
+
+                No encontramos habitaciones disponibles
+
+            </h3>
+
+        </div>
+
+
+
+    </section>
+
+    <!-- ==============================
+         ROOMS LIST
+    =============================== -->
+
+
+    <section class="section">
+
+
+        <div class="container">
+
+
+
+            <div class="section-title">
+
+
+                <h2>
+
+                    Habitaciones disponibles
+
+                </h2>
+
+
+                <p>
+
+                    Selecciona el espacio que mejor se adapte a ti.
+
+                </p>
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="rooms-grid">
+
+
+
+
+
+
+
+                <!-- ==============================
+                     ROOM 1
+                =============================== -->
+
+
+                <article
+
+                    class="room-card"
+
+                    data-location="queretaro"
+
+                    data-type="individual"
+
+                    data-price="4800"
+
+                    data-capacity="1"
+
+                >
+
+
+
+
+                    <div class="room-image gallery-item">
+
+
+
+                        <img
+
+                            src="images/queretaro/q1.jpg"
+
+                            alt="Habitación ejecutiva Querétaro"
+
+                        >
+
+
+
+
+                        <button
+
+                            class="favorite-btn"
+
+                            aria-label="Agregar favorito"
+
+                        >
+
+                            <i class="fa-regular fa-heart"></i>
+
+
+                        </button>
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+                    <div class="room-content">
+
+
+
+
+
+                        <span class="availability available">
+
+
+                            Disponible
+
+
+                        </span>
+
+
+
+
+
+
+                        <h3>
+
+
+                            Habitación Ejecutiva
+
+
+                        </h3>
+
+
+
+
+
+
+                        <p class="location">
+
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+
+                            Colinas del Parque, Querétaro
+
+
+                        </p>
+
+
+
+
+
+
+
+                        <p>
+
+
+                            Ideal para estudiantes y profesionistas.
+
+
+                        </p>
+
+
+
+
+
+
+
+                        <ul class="room-features">
+
+
+                            <li>
+
+                                <i class="fa-solid fa-wifi"></i>
+
+                                WiFi
+
+                            </li>
+
+
+
+
+                            <li>
+
+                                <i class="fa-solid fa-bed"></i>
+
+                                Cama matrimonial
+
+                            </li>
+
+
+
+
+                            <li>
+
+                                <i class="fa-solid fa-shirt"></i>
+
+                                Closet
+
+                            </li>
+
+
+
+
+                            <li>
+
+                                <i class="fa-solid fa-car"></i>
+
+                                Estacionamiento
+
+                            </li>
+
+
+                        </ul>
+
+
+
+
+
+
+
+                        <div class="room-price">
+
+
+                            <strong>
+
+                                $4,800 MXN
+
+                            </strong>
+
+
+                            <span>
+
+                                / mes
+
+                            </span>
+
+
+                        </div>
+
+
+
+
+
+
+
+
+                        <a
+
+                            href="https://wa.me/524421234567"
+
+                            class="btn btn-primary room-btn"
+
+                            target="_blank"
+
+                        >
+
+
+                            <i class="fab fa-whatsapp"></i>
+
+
+                            Solicitar información
+
+
+                        </a>
+
+
+
+
+                    </div>
+
+
+
+                </article>
+
+
+
+
+
+
+
+
+
+                <!-- ==============================
+                     ROOM 2
+                =============================== -->
+
+
+
+                <article
+
+                    class="room-card"
+
+                    data-location="san miguel"
+
+                    data-type="suite"
+
+                    data-price="5300"
+
+                    data-capacity="1"
+
+                >
+
+
+
+
+
+                    <div class="room-image gallery-item">
+
+
+
+                        <img
+
+                            src="images/sanmiguel/s1.jpg"
+
+                            alt="Suite San Miguel de Allende"
+
+                        >
+
+
+
+
+
+                        <button
+
+                            class="favorite-btn"
+
+                        >
+
+                            <i class="fa-regular fa-heart"></i>
+
+
+                        </button>
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="room-content">
+
+
+
+                        <span class="availability available">
+
+                            Disponible
+
+                        </span>
+
+
+
+
+
+
+                        <h3>
+
+
+                            Suite Colonial
+
+
+                        </h3>
+
+
+
+
+
+
+                        <p class="location">
+
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+
+                            San Miguel de Allende
+
+
+                        </p>
+
+
+
+
+
+
+                        <p>
+
+
+                            Ambiente tranquilo y excelente ubicación.
+
+
+                        </p>
+
+
+
+
+
+
+                        <ul class="room-features">
+
+
+
+                            <li>
+
+                                <i class="fa-solid fa-wifi"></i>
+
+                                WiFi
+
+                            </li>
+
+
+
+                            <li>
+
+                                <i class="fa-solid fa-bath"></i>
+
+                                Baño privado
+
+                            </li>
+
+
+
+
+                            <li>
+
+                                <i class="fa-solid fa-table"></i>
+
+                                Escritorio
+
+                            </li>
+
+
+
+
+                            <li>
+
+                                <i class="fa-solid fa-kitchen-set"></i>
+
+                                Cocina
+
+                            </li>
+
+
+
+                        </ul>
+
+
+
+
+
+
+
+                        <div class="room-price">
+
+
+                            <strong>
+
+                                $5,300 MXN
+
+
+                            </strong>
+
+
+                            <span>
+
+                                / mes
+
+                            </span>
+
+
+                        </div>
+
+
+
+
+
+
+
+                        <a
+
+                            href="https://wa.me/524421234567"
+
+                            class="btn btn-primary room-btn"
+
+                            target="_blank"
+
+                        >
+
+
+
+                            <i class="fab fa-whatsapp"></i>
+
+
+                            Solicitar información
+
+
+
+                        </a>
+
+
+
+                    </div>
+
+
+
+
+                </article>
+
+
+
+
+
+
+
+
+
+                <!-- ==============================
+                     ROOM 3
+                =============================== -->
+
+
+
+                <article
+
+                    class="room-card"
+
+                    data-location="puerto vallarta"
+
+                    data-type="suite"
+
+                    data-price="6200"
+
+                    data-capacity="2"
+
+                >
+
+
+
+
+                    <div class="room-image gallery-item">
+
+
+
+                        <img
+
+                            src="images/vallarta/v1.jpg"
+
+                            alt="Habitación vista al mar Puerto Vallarta"
+
+                        >
+
+
+
+
+                        <button
+
+                            class="favorite-btn"
+
+                        >
+
+                            <i class="fa-regular fa-heart"></i>
+
+
+                        </button>
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+                    <div class="room-content">
+
+
+
+                        <span class="availability last">
+
+
+                            Última disponible
+
+
+                        </span>
+
+
+
+
+
+
+                        <h3>
+
+
+                            Vista al Mar
+
+
+                        </h3>
+
+
+
+
+
+
+                        <p class="location">
+
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+
+                            Puerto Vallarta
+
+
+                        </p>
+
+
+
+
+
+
+
+                        <p>
+
+
+                            Perfecta para vivir cerca de la playa.
+
+
+                        </p>
+
+
+
+
+
+
+                        <ul class="room-features">
+
+
+
+                            <li>
+
+                                <i class="fa-solid fa-snowflake"></i>
+
+                                Aire acondicionado
+
+                            </li>
+
+
+
+
+                            <li>
+
+                                <i class="fa-solid fa-wifi"></i>
+
+                                WiFi
+
+                            </li>
+
+
+
+
+                            <li>
+
+                                <i class="fa-solid fa-tv"></i>
+
+                                Smart TV
+
+                            </li>
+
+
+
+
+                            <li>
+
+                                <i class="fa-solid fa-kitchen-set"></i>
+
+                                Cocina
+
+                            </li>
+
+
+
+                        </ul>
+
+
+
+
+
+
+
+
+                        <div class="room-price">
+
+
+                            <strong>
+
+                                $6,200 MXN
+
+
+                            </strong>
+
+
+
+                            <span>
+
+                                / mes
+
+                            </span>
+
+
+                        </div>
+
+
+
+
+
+
+
+                        <a
+
+                            href="https://wa.me/524421234567"
+
+                            class="btn btn-primary room-btn"
+
+                            target="_blank"
+
+                        >
+
+
+
+                            <i class="fab fa-whatsapp"></i>
+
+
+                            Solicitar información
+
+
+
+                        </a>
+
+
+
+
+                    </div>
+
+
+
+
+
+                </article>
+
+
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </section>
+
+    <!-- ==============================
+         RENT BENEFITS
+    =============================== -->
+
+
+    <section class="section">
+
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+
+                <h2>
+
+                    ¿Qué incluye tu renta?
+
+                </h2>
+
+
+                <p>
+
+                    Todo lo necesario para vivir cómodamente.
+
+                </p>
+
+
+            </div>
+
+
+
+
+
+            <div class="features">
+
+
+
+
+
+                <div class="feature-card">
+
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-wifi"></i>
+
+                    </div>
+
+
+                    <h3>
+
+                        Internet
+
+                    </h3>
+
+
+                    <p>
+
+                        WiFi de alta velocidad incluido.
+
+                    </p>
+
+
+                </div>
+
+
+
+
+
+
+
+                <div class="feature-card">
+
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-kitchen-set"></i>
+
+                    </div>
+
+
+                    <h3>
+
+                        Cocina equipada
+
+                    </h3>
+
+
+                    <p>
+
+                        Espacios preparados para cocinar.
+
+                    </p>
+
+
+                </div>
+
+
+
+
+
+
+
+                <div class="feature-card">
+
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                    </div>
+
+
+                    <h3>
+
+                        Seguridad
+
+                    </h3>
+
+
+                    <p>
+
+                        Zonas seleccionadas y confiables.
+
+                    </p>
+
+
+                </div>
+
+
+
+
+
+
+
+                <div class="feature-card">
+
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-broom"></i>
+
+                    </div>
+
+
+                    <h3>
+
+                        Limpieza
+
+                    </h3>
+
+
+                    <p>
+
+                        Espacios cómodos y cuidados.
+
+                    </p>
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- ==============================
+         FAQ
+    =============================== -->
+
+
+    <section class="section faq-section">
+
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+
+                <h2>
+
+                    Preguntas frecuentes
+
+                </h2>
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="faq">
+
+
+
+
+
+                <details>
+
+
+                    <summary>
+
+                        ¿Los servicios están incluidos?
+
+                    </summary>
+
+
+                    <p>
+
+                        Depende de cada habitación.
+                        Algunos incluyen internet, agua y mantenimiento.
+
+                    </p>
+
+
+                </details>
+
+
+
+
+
+
+
+                <details>
+
+
+                    <summary>
+
+                        ¿Necesito contrato?
+
+                    </summary>
+
+
+                    <p>
+
+                        Ofrecemos opciones flexibles según disponibilidad.
+
+                    </p>
+
+
+                </details>
+
+
+
+
+
+
+
+                <details>
+
+
+                    <summary>
+
+                        ¿Puedo visitar la habitación?
+
+                    </summary>
+
+
+                    <p>
+
+                        Sí. Puedes agendar una visita por WhatsApp.
+
+                    </p>
+
+
+                </details>
+
+
+
+
+
+
+
+                <details>
+
+
+                    <summary>
+
+                        ¿Aceptan estudiantes y profesionistas?
+
+                    </summary>
+
+
+                    <p>
+
+                        Sí. Tenemos habitaciones para diferentes perfiles.
+
+                    </p>
+
+
+                </details>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
+
+
+    <footer class="footer">
+
+
+        <div class="container">
+
+
+
+            <div class="footer-grid">
+
+
+
+
+
+                <div>
+
+
+                    <h3>
+
+                        Best Rentas
+
+                    </h3>
+
+
+                    <p>
+
+                        Habitaciones seguras y cómodas
+                        en las mejores ciudades.
+
+                    </p>
+
+
+                </div>
+
+
+
+
+
+
+
+                <div>
+
+
+                    <h3>
+
+                        Enlaces
+
+                    </h3>
+
+
+
+                    <ul class="footer-links">
+
+
+                        <li>
+
+                            <a href="index.html">
+
+                                Inicio
+
+                            </a>
+
+
+                        </li>
+
+
+
+                        <li>
+
+                            <a href="habitaciones.html">
+
+                                Habitaciones
+
+                            </a>
+
+
+                        </li>
+
+
+
+                        <li>
+
+                            <a href="contacto.html">
+
+                                Contacto
+
+                            </a>
+
+
+                        </li>
+
+
+
+                    </ul>
+
+
+                </div>
+
+
+
+
+
+
+
+                <div>
+
+
+                    <h3>
+
+                        Ubicaciones
+
+                    </h3>
+
+
+                    <p>
+
+                        Querétaro
+
+                    </p>
+
+
+                    <p>
+
+                        San Miguel
+
+                    </p>
+
+
+                    <p>
+
+                        Puerto Vallarta
+
+                    </p>
+
+
+                </div>
+
+
+
+
+
+
+
+
+                <div>
+
+
+                    <h3>
+
+                        Síguenos
+
+                    </h3>
+
+
+                    <div class="social-links">
+
+
+                        <a href="#">
+
+                            <i class="fab fa-facebook"></i>
+
+                        </a>
+
+
+
+                        <a href="#">
+
+                            <i class="fab fa-instagram"></i>
+
+                        </a>
+
+
+
+                        <a href="#">
+
+                            <i class="fab fa-tiktok"></i>
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <div class="footer-bottom">
+
+
+                <p>
+
+
+                    ©
+
+                    <span id="year"></span>
+
+
+                    Best Rentas de Cuartos
+
+                    |
+
+                    Wilson Cardichon
+
+
+                </p>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+    <!-- ==============================
+         WHATSAPP FLOAT
+    =============================== -->
+
+
+    <a
+
+        href="https://wa.me/524421234567"
+
+        class="whatsapp-btn"
+
+        target="_blank"
+
+    >
+
+
+        <i class="fab fa-whatsapp"></i>
+
+
+    </a>
+
+
+
+
+
+
+
+
+
+    <!-- ==============================
+         SCROLL BUTTON
+    =============================== -->
+
+
+    <button
+
+        class="scroll-top"
+
+    >
+
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+
+    </button>
+
+
+
+
+
+
+
+
+
+    <!-- ==============================
+         SCRIPTS
+    =============================== -->
+
+
+
+    <script
+
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
+
+    </script>
+
+
+
+
+
+    <script src="js/script.js"></script>
+
+
+    <script src="js/filter.js"></script>
+
+
+    <script src="js/darkmode.js"></script>
+
+
+    <script src="js/gallery.js"></script>
+
+
+    <script src="js/language.js"></script>
+
+
+
+</body>
+
+
+</html>

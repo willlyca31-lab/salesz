@@ -1,0 +1,23 @@
+
+const products = [
+    {
+        name: "Pollo Fresco",
+        price: 36,
+        image: "https://images.unsplash.com/photo-1604503468506-a8da13d82791?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+        name: "Margarina Iberia",
+        price: 14,
+        image: "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+        name: "Coca Cola Pack",
+        price: 55,
+        image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+        name: "Pantalla Smart TV",
+        price: 4999,
+        image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=800&auto=format&fit=crop"
+    }
+];

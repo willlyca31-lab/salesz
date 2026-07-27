@@ -1,0 +1,4693 @@
+
+/* =====================================================
+   BEST RENTAS DE CUARTOS
+   MAIN STYLESHEET
+   Wilson Cardichon
+===================================================== */
+
+
+/* =====================================================
+   ROOT VARIABLES
+===================================================== */
+
+
+:root {
+
+
+    --primary-color: #0d6efd;
+
+
+    --secondary-color: #198754;
+
+
+    --dark-color: #111827;
+
+
+    --light-color: #f5f7fa;
+
+
+    --white-color: #ffffff;
+
+
+    --text-color: #333333;
+
+
+    --gray-color: #6b7280;
+
+
+    --border-color: #e5e7eb;
+
+
+    --shadow:
+
+        0 10px 30px rgba(0,0,0,0.08);
+
+
+
+    --radius:
+
+        16px;
+
+
+    --transition:
+
+        all .3s ease;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   DARK MODE VARIABLES
+===================================================== */
+
+
+body.dark-mode {
+
+
+    --light-color: #111827;
+
+
+    --white-color: #1f2937;
+
+
+    --text-color: #f9fafb;
+
+
+    --dark-color: #000000;
+
+
+    --border-color: #374151;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+
+
+* {
+
+
+    margin:0;
+
+
+    padding:0;
+
+
+    box-sizing:border-box;
+
+
+}
+
+
+
+
+
+
+html {
+
+
+    scroll-behavior:smooth;
+
+
+}
+
+
+
+
+
+
+body {
+
+
+    font-family:
+
+    "Poppins",
+    Arial,
+    sans-serif;
+
+
+    background:
+
+    var(--light-color);
+
+
+    color:
+
+    var(--text-color);
+
+
+    line-height:
+
+    1.6;
+
+
+    transition:
+
+    var(--transition);
+
+
+}
+
+
+
+
+
+
+img {
+
+
+    max-width:100%;
+
+
+    display:block;
+
+
+}
+
+
+
+
+
+
+a {
+
+
+    text-decoration:none;
+
+
+    color:inherit;
+
+
+}
+
+
+
+
+
+ul {
+
+
+    list-style:none;
+
+
+}
+
+
+
+
+
+
+
+
+.container {
+
+
+    width:90%;
+
+
+    max-width:1200px;
+
+
+    margin:auto;
+
+
+}
+
+
+
+
+
+
+
+
+.section {
+
+
+    padding:
+
+    80px 0;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   TYPOGRAPHY
+===================================================== */
+
+
+h1,
+h2,
+h3,
+h4 {
+
+
+    font-weight:700;
+
+
+    color:var(--text-color);
+
+
+}
+
+
+
+
+h1 {
+
+
+    font-size:
+
+    clamp(2rem,5vw,3.5rem);
+
+
+}
+
+
+
+
+
+h2 {
+
+
+    font-size:
+
+    2.2rem;
+
+
+    margin-bottom:
+
+    20px;
+
+
+}
+
+
+
+
+
+p {
+
+
+    color:
+
+    var(--gray-color);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+
+.navbar {
+
+
+    background:
+
+    var(--white-color);
+
+
+    position:
+
+    sticky;
+
+
+    top:
+
+    0;
+
+
+    z-index:
+
+    1000;
+
+
+    box-shadow:
+
+    0 4px 20px rgba(0,0,0,.08);
+
+
+}
+
+
+
+
+
+
+.navbar-container {
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+    padding:
+
+    18px 0;
+
+
+}
+
+
+
+
+
+
+.logo {
+
+
+    font-size:
+
+    1.6rem;
+
+
+    font-weight:
+
+    700;
+
+
+    color:
+
+    var(--primary-color);
+
+
+}
+
+
+
+
+
+.logo span {
+
+
+    color:
+
+    var(--secondary-color);
+
+
+}
+
+
+
+
+
+
+.nav-menu {
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:
+
+    25px;
+
+
+}
+
+
+
+
+
+
+.nav-menu a {
+
+
+    font-weight:
+
+    500;
+
+
+    transition:
+
+    var(--transition);
+
+
+}
+
+
+
+
+
+
+.nav-menu a:hover,
+.nav-menu a.active {
+
+
+    color:
+
+    var(--primary-color);
+
+
+}
+
+
+
+
+
+
+
+#language-selector {
+
+
+    padding:
+
+    8px;
+
+
+    border-radius:
+
+    8px;
+
+
+    border:
+
+    1px solid var(--border-color);
+
+
+    background:
+
+    var(--white-color);
+
+
+    color:
+
+    var(--text-color);
+
+
+}
+
+
+
+
+
+
+
+.dark-toggle {
+
+
+    width:
+
+    40px;
+
+
+    height:
+
+    40px;
+
+
+    border-radius:
+
+    50%;
+
+
+    border:none;
+
+
+    background:
+
+    var(--dark-color);
+
+
+    color:
+
+    white;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+
+
+.menu-toggle {
+
+
+    display:none;
+
+
+    font-size:
+
+    1.5rem;
+
+
+}
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
+
+.hero {
+
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        rgba(13,110,253,.95),
+
+        rgba(25,135,84,.9)
+
+    );
+
+
+    color:
+
+    white;
+
+
+    padding:
+
+    100px 0;
+
+
+    position:
+
+    relative;
+
+
+    overflow:
+
+    hidden;
+
+
+}
+
+
+
+
+
+
+.hero::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:400px;
+
+
+    height:400px;
+
+
+    background:
+
+    rgba(255,255,255,.1);
+
+
+    border-radius:
+
+    50%;
+
+
+    top:-150px;
+
+
+    right:-100px;
+
+
+}
+
+
+
+
+
+
+.hero h1 {
+
+
+    color:white;
+
+
+    margin-bottom:
+
+    20px;
+
+
+    position:
+
+    relative;
+
+
+}
+
+
+
+
+
+
+.hero p {
+
+
+    color:
+
+    rgba(255,255,255,.9);
+
+
+    font-size:
+
+    1.2rem;
+
+
+    max-width:
+
+    700px;
+
+
+    margin:auto;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   HERO BUTTONS
+===================================================== */
+
+
+.hero-buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:20px;
+
+
+    margin-top:
+
+    35px;
+
+
+}
+
+
+
+
+
+
+
+.btn {
+
+
+    display:inline-flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    gap:10px;
+
+
+    padding:
+
+    12px 28px;
+
+
+    border-radius:
+
+    50px;
+
+
+    border:none;
+
+
+    cursor:pointer;
+
+
+    font-weight:
+
+    600;
+
+
+    transition:
+
+    var(--transition);
+
+
+}
+
+
+
+
+
+
+
+.btn-primary {
+
+
+    background:
+
+    var(--primary-color);
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+.btn-primary:hover {
+
+
+    transform:
+
+    translateY(-3px);
+
+
+    box-shadow:
+
+    var(--shadow);
+
+
+}
+
+
+
+
+
+
+
+.btn-success {
+
+
+    background:
+
+    var(--secondary-color);
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+.btn-success:hover {
+
+
+    transform:
+
+    translateY(-3px);
+
+
+}
+
+
+
+
+
+
+.btn-secondary {
+
+
+    background:
+
+    white;
+
+
+    color:
+
+    var(--primary-color);
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   SEARCH BOX
+===================================================== */
+
+
+.search-box {
+
+
+    background:
+
+    var(--white-color);
+
+
+    margin-top:
+
+    -40px;
+
+
+    position:
+
+    relative;
+
+
+    z-index:
+
+    10;
+
+
+    border-radius:
+
+    var(--radius);
+
+
+    padding:
+
+    30px;
+
+
+    box-shadow:
+
+    var(--shadow);
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(4,1fr);
+
+
+    gap:
+
+    20px;
+
+
+}
+
+
+
+
+
+
+
+.search-item {
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:8px;
+
+
+}
+
+
+
+
+
+.search-item label {
+
+
+    font-weight:
+
+    600;
+
+
+}
+
+
+
+
+
+.search-item input,
+.search-item select {
+
+
+    padding:
+
+    12px;
+
+
+    border-radius:
+
+    10px;
+
+
+    border:
+
+    1px solid var(--border-color);
+
+
+    background:
+
+    var(--white-color);
+
+
+    color:
+
+    var(--text-color);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   SECTION TITLE
+===================================================== */
+
+
+.section-title {
+
+
+    text-align:center;
+
+
+    margin-bottom:
+
+    50px;
+
+
+}
+
+
+
+
+
+
+.section-title p {
+
+
+    max-width:
+
+    650px;
+
+
+    margin:auto;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   ROOMS GRID
+===================================================== */
+
+
+.rooms-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+
+    gap:
+
+    30px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   ROOM CARD
+===================================================== */
+
+
+.room-card {
+
+
+    background:
+
+    var(--white-color);
+
+
+    border-radius:
+
+    var(--radius);
+
+
+    overflow:
+
+    hidden;
+
+
+    box-shadow:
+
+    var(--shadow);
+
+
+    transition:
+
+    var(--transition);
+
+
+}
+
+
+
+
+
+
+.room-card:hover {
+
+
+    transform:
+
+    translateY(-8px);
+
+
+}
+
+
+
+
+
+
+
+.room-image {
+
+
+    position:
+
+    relative;
+
+
+    height:
+
+    260px;
+
+
+    overflow:
+
+    hidden;
+
+
+}
+
+
+
+
+
+
+
+.room-image img {
+
+
+    width:100%;
+
+
+    height:100%;
+
+
+    object-fit:cover;
+
+
+    transition:
+
+    .5s;
+
+
+}
+
+
+
+
+
+
+
+.room-card:hover img {
+
+
+    transform:
+
+    scale(1.08);
+
+
+}
+
+
+
+
+
+
+
+
+.favorite-btn {
+
+
+    position:absolute;
+
+
+    top:15px;
+
+
+    right:15px;
+
+
+    width:40px;
+
+
+    height:40px;
+
+
+    border-radius:
+
+    50%;
+
+
+    border:none;
+
+
+    background:white;
+
+
+    cursor:pointer;
+
+
+    font-size:
+
+    20px;
+
+
+}
+
+
+
+
+
+
+
+
+.room-content {
+
+
+    padding:
+
+    25px;
+
+
+}
+
+
+
+
+
+
+.availability {
+
+
+    display:inline-block;
+
+
+    padding:
+
+    5px 12px;
+
+
+    border-radius:
+
+    20px;
+
+
+    font-size:
+
+    .85rem;
+
+
+    margin-bottom:
+
+    15px;
+
+
+}
+
+
+
+
+
+
+.available {
+
+
+    background:
+
+    #d1fae5;
+
+
+    color:
+
+    #065f46;
+
+
+}
+
+
+
+
+
+
+.last {
+
+
+    background:
+
+    #fef3c7;
+
+
+    color:
+
+    #92400e;
+
+
+}
+
+
+
+
+
+
+
+
+
+.location {
+
+
+    display:flex;
+
+
+    gap:8px;
+
+
+    align-items:center;
+
+
+    color:
+
+    var(--gray-color);
+
+
+}
+
+
+
+
+
+
+
+.room-features {
+
+
+    margin:
+
+    20px 0;
+
+
+}
+
+
+
+
+
+.room-features li {
+
+
+    display:flex;
+
+
+    gap:
+
+    10px;
+
+
+    margin-bottom:
+
+    8px;
+
+
+}
+
+
+
+
+
+
+
+.room-price {
+
+
+    font-size:
+
+    1.4rem;
+
+
+    margin-bottom:
+
+    20px;
+
+
+}
+
+
+
+
+
+.room-price strong {
+
+
+    color:
+
+    var(--primary-color);
+
+
+}
+
+
+
+
+
+
+
+
+.room-btn {
+
+
+    width:
+
+    100%;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   GALLERY
+===================================================== */
+
+
+.gallery-item {
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+
+
+.gallery-item:hover {
+
+
+    opacity:
+
+    .9;
+
+
+}
+
+/* =====================================================
+   FEATURES CARDS
+===================================================== */
+
+
+.features {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+
+    repeat(4,1fr);
+
+
+    gap:
+
+    25px;
+
+
+}
+
+
+
+
+
+
+
+.feature-card {
+
+
+    background:
+
+    var(--white-color);
+
+
+    padding:
+
+    30px;
+
+
+    border-radius:
+
+    var(--radius);
+
+
+    text-align:center;
+
+
+    box-shadow:
+
+    var(--shadow);
+
+
+    transition:
+
+    var(--transition);
+
+
+}
+
+
+
+
+
+
+.feature-card:hover {
+
+
+    transform:
+
+    translateY(-8px);
+
+
+}
+
+
+
+
+
+
+
+.feature-icon {
+
+
+    width:
+
+    70px;
+
+
+    height:
+
+    70px;
+
+
+    margin:
+
+    0 auto 20px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    border-radius:
+
+    50%;
+
+
+    background:
+
+    rgba(13,110,253,.1);
+
+
+    color:
+
+    var(--primary-color);
+
+
+    font-size:
+
+    30px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   LOCATION SECTION
+===================================================== */
+
+
+.location-detail {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    1fr 1fr;
+
+
+    gap:
+
+    50px;
+
+
+    align-items:center;
+
+
+    margin-bottom:
+
+    50px;
+
+
+}
+
+
+
+
+
+
+
+.location-tag {
+
+
+    display:inline-block;
+
+
+    padding:
+
+    7px 15px;
+
+
+    background:
+
+    rgba(13,110,253,.1);
+
+
+    color:
+
+    var(--primary-color);
+
+
+    border-radius:
+
+    20px;
+
+
+    font-size:
+
+    .9rem;
+
+
+    margin-bottom:
+
+    15px;
+
+
+}
+
+
+
+
+
+
+
+.location-list {
+
+
+    margin:
+
+    25px 0;
+
+
+}
+
+
+
+
+
+
+
+.location-list li {
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:
+
+    15px;
+
+
+    margin-bottom:
+
+    15px;
+
+
+}
+
+
+
+
+
+
+
+.location-list i {
+
+
+    color:
+
+    var(--primary-color);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   MAP
+===================================================== */
+
+
+.map-container {
+
+
+    width:100%;
+
+
+    height:
+
+    350px;
+
+
+    border-radius:
+
+    var(--radius);
+
+
+    overflow:hidden;
+
+
+    box-shadow:
+
+    var(--shadow);
+
+
+}
+
+
+
+
+
+
+
+.map-container iframe {
+
+
+    width:100%;
+
+
+    height:100%;
+
+
+    border:0;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   NEARBY BOX
+===================================================== */
+
+
+.nearby-box {
+
+
+    background:
+
+    var(--white-color);
+
+
+    padding:
+
+    35px;
+
+
+    border-radius:
+
+    var(--radius);
+
+
+    box-shadow:
+
+    var(--shadow);
+
+
+    margin-top:
+
+    30px;
+
+
+}
+
+
+
+
+
+
+
+.nearby-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+
+    gap:
+
+    25px;
+
+
+    margin-top:
+
+    25px;
+
+
+}
+
+
+
+
+
+
+
+.nearby-grid div {
+
+
+    padding:
+
+    20px;
+
+
+    border-radius:
+
+    12px;
+
+
+    border:
+
+    1px solid var(--border-color);
+
+
+}
+
+
+
+
+
+
+
+
+.nearby-grid i {
+
+
+    color:
+
+    var(--primary-color);
+
+
+    font-size:
+
+    25px;
+
+
+    margin-bottom:
+
+    10px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   CONTACT PAGE
+===================================================== */
+
+
+.contact-wrapper {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    1.5fr 1fr;
+
+
+    gap:
+
+    40px;
+
+
+}
+
+
+
+
+
+
+
+
+.contact-form-card,
+.contact-info-card {
+
+
+    background:
+
+    var(--white-color);
+
+
+    padding:
+
+    35px;
+
+
+    border-radius:
+
+    var(--radius);
+
+
+    box-shadow:
+
+    var(--shadow);
+
+
+}
+
+
+
+
+
+
+
+
+
+.form-group {
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:
+
+    8px;
+
+
+    margin-bottom:
+
+    20px;
+
+
+}
+
+
+
+
+
+
+
+.form-row {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+
+    gap:
+
+    20px;
+
+
+}
+
+
+
+
+
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+
+
+    width:100%;
+
+
+    padding:
+
+    14px;
+
+
+    border-radius:
+
+    10px;
+
+
+    border:
+
+    1px solid var(--border-color);
+
+
+    background:
+
+    var(--white-color);
+
+
+    color:
+
+    var(--text-color);
+
+
+}
+
+
+
+
+
+
+
+.form-group textarea {
+
+
+    resize:none;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   CONTACT INFO
+===================================================== */
+
+
+.contact-item {
+
+
+    display:flex;
+
+
+    gap:
+
+    20px;
+
+
+    margin-bottom:
+
+    25px;
+
+
+}
+
+
+
+
+
+
+.contact-item i {
+
+
+    color:
+
+    var(--primary-color);
+
+
+    font-size:
+
+    25px;
+
+
+}
+
+
+
+
+
+
+
+
+.contact-map {
+
+
+    height:
+
+    250px;
+
+
+    border-radius:
+
+    15px;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+
+
+.contact-map iframe {
+
+
+    width:100%;
+
+
+    height:100%;
+
+
+    border:0;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+
+.faq {
+
+
+    max-width:
+
+    900px;
+
+
+    margin:auto;
+
+
+}
+
+
+
+
+
+
+
+.faq details {
+
+
+    background:
+
+    var(--white-color);
+
+
+    padding:
+
+    20px;
+
+
+    margin-bottom:
+
+    15px;
+
+
+    border-radius:
+
+    12px;
+
+
+    box-shadow:
+
+    var(--shadow);
+
+
+}
+
+
+
+
+
+
+
+.faq summary {
+
+
+    cursor:pointer;
+
+
+    font-weight:
+
+    600;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   TESTIMONIALS
+===================================================== */
+
+
+.testimonials-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+
+    gap:
+
+    25px;
+
+
+}
+
+
+
+
+
+
+
+.testimonial-card {
+
+
+    background:
+
+    var(--white-color);
+
+
+    padding:
+
+    30px;
+
+
+    border-radius:
+
+    var(--radius);
+
+
+    box-shadow:
+
+    var(--shadow);
+
+
+}
+
+
+
+
+
+
+
+.testimonial-stars {
+
+
+    color:
+
+    #fbbf24;
+
+
+    font-size:
+
+    20px;
+
+
+    margin-bottom:
+
+    15px;
+
+
+}
+
+/* =====================================================
+   CALL TO ACTION SECTION
+===================================================== */
+
+
+.cta-section {
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        var(--primary-color),
+
+        var(--secondary-color)
+
+    );
+
+
+    padding:
+
+    80px 0;
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+.cta-section h2 {
+
+
+    color:white;
+
+
+    margin-bottom:
+
+    15px;
+
+
+}
+
+
+
+
+
+
+.cta-section p {
+
+
+    color:
+
+    rgba(255,255,255,.9);
+
+
+    margin-bottom:
+
+    30px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+
+.footer {
+
+
+    background:
+
+    #111827;
+
+
+    color:white;
+
+
+    padding:
+
+    70px 0 20px;
+
+
+}
+
+
+
+
+
+
+
+.footer-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(4,1fr);
+
+
+    gap:
+
+    40px;
+
+
+}
+
+
+
+
+
+
+
+.footer h3 {
+
+
+    color:white;
+
+
+    margin-bottom:
+
+    20px;
+
+
+}
+
+
+
+
+
+
+
+.footer p {
+
+
+    color:
+
+    #d1d5db;
+
+
+}
+
+
+
+
+
+
+
+.footer-links li {
+
+
+    margin-bottom:
+
+    12px;
+
+
+}
+
+
+
+
+
+
+
+.footer-links a {
+
+
+    color:
+
+    #d1d5db;
+
+
+    transition:
+
+    var(--transition);
+
+
+}
+
+
+
+
+
+
+
+.footer-links a:hover {
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   SOCIAL LINKS
+===================================================== */
+
+
+.social-links {
+
+
+    display:flex;
+
+
+    gap:
+
+    15px;
+
+
+}
+
+
+
+
+
+
+
+.social-links a {
+
+
+    width:
+
+    45px;
+
+
+    height:
+
+    45px;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    background:
+
+    rgba(255,255,255,.1);
+
+
+    border-radius:
+
+    50%;
+
+
+    color:white;
+
+
+    font-size:
+
+    20px;
+
+
+    transition:
+
+    var(--transition);
+
+
+}
+
+
+
+
+
+
+
+.social-links a:hover {
+
+
+    background:
+
+    var(--primary-color);
+
+
+    transform:
+
+    translateY(-5px);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   FOOTER BOTTOM
+===================================================== */
+
+
+.footer-bottom {
+
+
+    margin-top:
+
+    50px;
+
+
+    padding-top:
+
+    20px;
+
+
+    border-top:
+
+    1px solid rgba(255,255,255,.15);
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+
+.footer-bottom p {
+
+
+    margin:0;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   WHATSAPP FLOAT BUTTON
+===================================================== */
+
+
+.whatsapp-btn {
+
+
+    position:
+
+    fixed;
+
+
+    right:
+
+    25px;
+
+
+    bottom:
+
+    25px;
+
+
+    width:
+
+    60px;
+
+
+    height:
+
+    60px;
+
+
+    background:
+
+    #25D366;
+
+
+    color:white;
+
+
+    border-radius:
+
+    50%;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    font-size:
+
+    30px;
+
+
+    z-index:
+
+    999;
+
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.3);
+
+
+    animation:
+
+    pulse 2s infinite;
+
+
+}
+
+
+
+
+
+
+
+.whatsapp-btn:hover {
+
+
+    transform:
+
+    scale(1.1);
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   SCROLL TOP BUTTON
+===================================================== */
+
+
+.scroll-top {
+
+
+    position:
+
+    fixed;
+
+
+    right:
+
+    25px;
+
+
+    bottom:
+
+    100px;
+
+
+    width:
+
+    45px;
+
+
+    height:
+
+    45px;
+
+
+    border-radius:
+
+    50%;
+
+
+    border:none;
+
+
+    background:
+
+    var(--primary-color);
+
+
+    color:white;
+
+
+    cursor:pointer;
+
+
+    display:none;
+
+
+    z-index:
+
+    900;
+
+
+}
+
+
+
+
+
+
+
+.scroll-top.show {
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+
+@keyframes pulse {
+
+
+    0% {
+
+
+        box-shadow:
+
+        0 0 0 0 rgba(37,211,102,.7);
+
+
+    }
+
+
+
+    70% {
+
+
+        box-shadow:
+
+        0 0 0 20px rgba(37,211,102,0);
+
+
+    }
+
+
+
+    100% {
+
+
+        box-shadow:
+
+        0 0 0 0 rgba(37,211,102,0);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+.fade-in {
+
+
+    animation:
+
+    fadeIn .8s ease;
+
+
+}
+
+
+
+
+
+
+
+@keyframes fadeIn {
+
+
+    from {
+
+
+        opacity:0;
+
+
+        transform:
+
+        translateY(30px);
+
+
+    }
+
+
+
+    to {
+
+
+        opacity:1;
+
+
+        transform:
+
+        translateY(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+.slide-left {
+
+
+    animation:
+
+    slideLeft .8s ease;
+
+
+}
+
+
+
+
+
+
+@keyframes slideLeft {
+
+
+    from {
+
+
+        opacity:0;
+
+
+        transform:
+
+        translateX(-40px);
+
+
+    }
+
+
+
+    to {
+
+
+        opacity:1;
+
+
+        transform:
+
+        translateX(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+.slide-right {
+
+
+    animation:
+
+    slideRight .8s ease;
+
+
+}
+
+
+
+
+
+
+@keyframes slideRight {
+
+
+    from {
+
+
+        opacity:0;
+
+
+        transform:
+
+        translateX(40px);
+
+
+    }
+
+
+
+    to {
+
+
+        opacity:1;
+
+
+        transform:
+
+        translateX(0);
+
+
+    }
+
+
+}
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+
+
+@media(max-width:1100px){
+
+
+
+    .features {
+
+
+        grid-template-columns:
+
+
+        repeat(2,1fr);
+
+
+    }
+
+
+
+
+
+    .rooms-grid {
+
+
+        grid-template-columns:
+
+
+        repeat(2,1fr);
+
+
+    }
+
+
+
+
+
+
+    .footer-grid {
+
+
+        grid-template-columns:
+
+
+        repeat(2,1fr);
+
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   TABLETS
+===================================================== */
+
+
+@media(max-width:900px){
+
+
+
+
+
+    .navbar-container {
+
+
+        padding:
+
+        15px 0;
+
+
+    }
+
+
+
+
+
+
+
+    .nav-menu {
+
+
+        position:absolute;
+
+
+        top:70px;
+
+
+        left:0;
+
+
+        width:100%;
+
+
+        background:
+
+        var(--white-color);
+
+
+        flex-direction:column;
+
+
+        padding:
+
+        30px;
+
+
+        display:none;
+
+
+        box-shadow:
+
+        var(--shadow);
+
+
+    }
+
+
+
+
+
+
+
+    .nav-menu.active {
+
+
+        display:flex;
+
+
+    }
+
+
+
+
+
+
+
+
+    .menu-toggle {
+
+
+        display:block;
+
+
+        cursor:pointer;
+
+
+        color:
+
+        var(--text-color);
+
+
+    }
+
+
+
+
+
+
+
+
+
+    .search-box {
+
+
+        grid-template-columns:
+
+
+        repeat(2,1fr);
+
+
+    }
+
+
+
+
+
+
+
+
+    .location-detail {
+
+
+        grid-template-columns:
+
+        1fr;
+
+
+    }
+
+
+
+
+
+
+
+    .contact-wrapper {
+
+
+        grid-template-columns:
+
+        1fr;
+
+
+    }
+
+
+
+
+
+
+
+    .hero {
+
+
+        padding:
+
+        80px 0;
+
+
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   MOBILE DEVICES
+===================================================== */
+
+
+@media(max-width:600px){
+
+
+
+
+
+
+    .container {
+
+
+        width:
+
+        92%;
+
+
+    }
+
+
+
+
+
+
+
+    .section {
+
+
+        padding:
+
+        50px 0;
+
+
+    }
+
+
+
+
+
+
+
+    h1 {
+
+
+        font-size:
+
+        2rem;
+
+
+    }
+
+
+
+
+
+
+
+    h2 {
+
+
+        font-size:
+
+        1.7rem;
+
+
+    }
+
+
+
+
+
+
+
+
+
+    .hero-buttons {
+
+
+        flex-direction:
+
+        column;
+
+
+    }
+
+
+
+
+
+
+
+
+
+    .search-box {
+
+
+        grid-template-columns:
+
+
+        1fr;
+
+
+        padding:
+
+        20px;
+
+
+    }
+
+
+
+
+
+
+
+
+
+    .features {
+
+
+        grid-template-columns:
+
+
+        1fr;
+
+
+    }
+
+
+
+
+
+
+
+
+    .rooms-grid {
+
+
+        grid-template-columns:
+
+
+        1fr;
+
+
+    }
+
+
+
+
+
+
+
+
+    .nearby-grid {
+
+
+        grid-template-columns:
+
+
+        1fr;
+
+
+    }
+
+
+
+
+
+
+
+
+    .form-row {
+
+
+        grid-template-columns:
+
+
+        1fr;
+
+
+    }
+
+
+
+
+
+
+
+
+    .footer-grid {
+
+
+        grid-template-columns:
+
+
+        1fr;
+
+
+        text-align:center;
+
+
+    }
+
+
+
+
+
+
+
+
+    .social-links {
+
+
+        justify-content:center;
+
+
+    }
+
+
+
+
+
+
+
+
+
+    .room-image {
+
+
+        height:
+
+        220px;
+
+
+    }
+
+
+
+
+
+
+
+
+    .whatsapp-btn {
+
+
+        width:
+
+        55px;
+
+
+        height:
+
+        55px;
+
+
+        right:
+
+        15px;
+
+
+        bottom:
+
+        15px;
+
+
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   LARGE DESKTOP
+===================================================== */
+
+
+@media(min-width:1400px){
+
+
+
+    .container {
+
+
+        max-width:
+
+        1400px;
+
+
+    }
+
+
+
+
+
+
+    .hero h1 {
+
+
+        font-size:
+
+        4rem;
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+
+button,
+a,
+input,
+select,
+textarea {
+
+
+    outline:none;
+
+
+}
+
+
+
+
+
+
+
+button:focus,
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+
+
+    box-shadow:
+
+    0 0 0 3px rgba(13,110,253,.3);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   LOADING EFFECT
+===================================================== */
+
+
+.loading {
+
+
+    opacity:
+
+    .5;
+
+
+    pointer-events:
+
+    none;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   IMAGE EFFECTS
+===================================================== */
+
+
+.image-hover {
+
+
+    overflow:hidden;
+
+
+    border-radius:
+
+    var(--radius);
+
+
+}
+
+
+
+
+
+
+
+.image-hover img {
+
+
+    transition:
+
+    .5s;
+
+
+}
+
+
+
+
+
+
+
+.image-hover:hover img {
+
+
+    transform:
+
+    scale(1.1);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   BADGES
+===================================================== */
+
+
+.badge {
+
+
+    padding:
+
+    6px 12px;
+
+
+    border-radius:
+
+    20px;
+
+
+    font-size:
+
+    .8rem;
+
+
+    font-weight:
+
+    600;
+
+
+}
+
+
+
+
+
+
+
+.badge-success {
+
+
+    background:#dcfce7;
+
+
+    color:#166534;
+
+
+}
+
+
+
+
+
+
+
+.badge-warning {
+
+
+    background:#fef3c7;
+
+
+    color:#92400e;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   SMOOTH TRANSITIONS
+===================================================== */
+
+
+.card,
+.feature-card,
+.room-card,
+.btn {
+
+
+    transition:
+
+    var(--transition);
+
+
+}
+
+/* =====================================================
+   DARK MODE COMPLETE
+===================================================== */
+
+
+
+body.dark-mode .navbar {
+
+
+    background:
+
+    #1f2937;
+
+
+}
+
+
+
+
+
+
+
+body.dark-mode .room-card,
+body.dark-mode .feature-card,
+body.dark-mode .contact-form-card,
+body.dark-mode .contact-info-card,
+body.dark-mode .nearby-box,
+body.dark-mode .faq details {
+
+
+    background:
+
+    #1f2937;
+
+
+    color:
+
+    #f9fafb;
+
+
+}
+
+
+
+
+
+
+
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+
+
+    background:
+
+    #111827;
+
+
+    color:
+
+    white;
+
+
+    border-color:
+
+    #374151;
+
+
+}
+
+
+
+
+
+
+
+
+body.dark-mode .search-box {
+
+
+    background:
+
+    #1f2937;
+
+
+}
+
+
+
+
+
+
+
+
+body.dark-mode .location-list li,
+body.dark-mode .room-features li {
+
+
+    color:
+
+    #d1d5db;
+
+
+}
+
+
+
+
+
+
+
+
+body.dark-mode p {
+
+
+    color:
+
+    #d1d5db;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   PREMIUM SHADOWS
+===================================================== */
+
+
+
+.shadow-soft {
+
+
+    box-shadow:
+
+
+    0 10px 40px rgba(0,0,0,.1);
+
+
+}
+
+
+
+
+
+
+
+.shadow-hover {
+
+
+    transition:
+
+    .3s ease;
+
+
+}
+
+
+
+
+
+
+
+.shadow-hover:hover {
+
+
+    transform:
+
+    translateY(-10px);
+
+
+    box-shadow:
+
+
+    0 20px 50px rgba(0,0,0,.15);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   SPACING UTILITIES
+===================================================== */
+
+
+
+.mt-10 {
+
+
+    margin-top:
+
+    100px;
+
+
+}
+
+
+
+.mb-10 {
+
+
+    margin-bottom:
+
+    100px;
+
+
+}
+
+
+
+.py-10 {
+
+
+    padding-top:
+
+    100px;
+
+
+    padding-bottom:
+
+    100px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   TEXT UTILITIES
+===================================================== */
+
+
+
+.text-primary {
+
+
+    color:
+
+    var(--primary-color)!important;
+
+
+}
+
+
+
+
+
+
+.text-center {
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+.text-white {
+
+
+    color:white!important;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   CARD SYSTEM
+===================================================== */
+
+
+.card-modern {
+
+
+    background:
+
+    var(--white-color);
+
+
+    padding:
+
+    30px;
+
+
+    border-radius:
+
+    var(--radius);
+
+
+    box-shadow:
+
+    var(--shadow);
+
+
+}
+
+
+
+
+
+
+
+
+.card-modern:hover {
+
+
+    transform:
+
+    translateY(-5px);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   PREMIUM HERO OVERLAY
+===================================================== */
+
+
+
+.hero-overlay {
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+    background:
+
+
+    rgba(0,0,0,.35);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   FLOATING ANIMATION
+===================================================== */
+
+
+
+.float {
+
+
+    animation:
+
+
+    floating 3s ease-in-out infinite;
+
+
+}
+
+
+
+
+
+
+
+
+@keyframes floating {
+
+
+    0% {
+
+
+        transform:
+
+        translateY(0);
+
+
+    }
+
+
+
+    50% {
+
+
+        transform:
+
+        translateY(-15px);
+
+
+    }
+
+
+
+    100% {
+
+
+        transform:
+
+        translateY(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   IMAGE GALLERY GRID
+===================================================== */
+
+
+
+.gallery-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+
+    repeat(4,1fr);
+
+
+    gap:
+
+    20px;
+
+
+}
+
+
+
+
+
+
+
+.gallery-grid img {
+
+
+    width:100%;
+
+
+    height:
+
+    250px;
+
+
+    object-fit:cover;
+
+
+    border-radius:
+
+    var(--radius);
+
+
+}
+
+
+
+
+
+
+
+@media(max-width:900px){
+
+
+
+    .gallery-grid {
+
+
+        grid-template-columns:
+
+
+        repeat(2,1fr);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+@media(max-width:600px){
+
+
+
+    .gallery-grid {
+
+
+        grid-template-columns:
+
+
+        1fr;
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   MODAL GALLERY
+===================================================== */
+
+
+
+.gallery-modal {
+
+
+    position:fixed;
+
+
+    inset:0;
+
+
+    background:
+
+
+    rgba(0,0,0,.8);
+
+
+    display:none;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    z-index:2000;
+
+
+}
+
+
+
+
+
+
+
+.gallery-modal.active {
+
+
+    display:flex;
+
+
+}
+
+
+
+
+
+
+
+.gallery-modal img {
+
+
+    max-width:
+
+    90%;
+
+
+    max-height:
+
+    90%;
+
+
+    border-radius:
+
+    20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   PRINT VERSION
+===================================================== */
+
+
+@media print {
+
+
+
+    .navbar,
+    .footer,
+    .whatsapp-btn,
+    .scroll-top,
+    button {
+
+
+        display:none!important;
+
+
+    }
+
+
+
+
+
+
+
+    body {
+
+
+        background:white;
+
+
+        color:black;
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   END OF STYLE.CSS
+===================================================== */
+
+
+

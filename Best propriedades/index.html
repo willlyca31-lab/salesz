@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>
+        Best Rentas de Cuartos | Encuentra tu hogar
+    </title>
+
+
+    <meta 
+        name="description"
+        content="Encuentra habitaciones cómodas y seguras en Querétaro, San Miguel y Puerto Vallarta."
+    >
+
+
+    <!-- Bootstrap -->
+
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- Font Awesome -->
+
+    <link 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS Principal -->
+
+    <link 
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ==============================
+         NAVBAR
+    =============================== -->
+
+
+    <header>
+
+        <nav class="navbar">
+
+
+            <div class="container navbar-container">
+
+
+                <a 
+                    href="index.html"
+                    class="logo"
+                >
+                    Best 
+                    <span>
+                        Rentas
+                    </span>
+                </a>
+
+
+
+                <div class="nav-menu">
+
+
+                    <a 
+                        href="index.html"
+                        data-translate="home"
+                    >
+                        Inicio
+                    </a>
+
+
+
+                    <a 
+                        href="habitaciones.html"
+                        data-translate="rooms"
+                    >
+                        Habitaciones
+                    </a>
+
+
+
+                    <a 
+                        href="ubicaciones.html"
+                        data-translate="locations"
+                    >
+                        Ubicaciones
+                    </a>
+
+
+
+                    <a 
+                        href="contacto.html"
+                        data-translate="contact"
+                    >
+                        Contacto
+                    </a>
+
+
+
+                    <!-- Idiomas -->
+
+                    <select 
+                        id="language-selector"
+                    >
+
+                        <option value="es">
+                            🇪🇸 Español
+                        </option>
+
+
+                        <option value="en">
+                            🇺🇸 English
+                        </option>
+
+
+                        <option value="fr">
+                            🇫🇷 Français
+                        </option>
+
+
+                    </select>
+
+
+
+
+                    <!-- Dark Mode -->
+
+                    <button 
+                        id="dark-mode-toggle"
+                        class="dark-toggle"
+                    >
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- Mobile Menu -->
+
+                <div class="menu-toggle">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </div>
+
+
+
+            </div>
+
+
+        </nav>
+
+
+    </header>
+
+
+
+
+
+    <!-- ==============================
+         HERO
+    =============================== -->
+
+
+    <section class="hero">
+
+
+        <div class="container">
+
+
+            <div class="hero-content fade-in">
+
+
+                <h1 data-translate="heroTitle">
+
+                    Encuentra tu próximo hogar
+
+                </h1>
+
+
+
+                <p data-translate="heroText">
+
+                    Habitaciones cómodas, seguras y listas para vivir.
+
+                </p>
+
+
+
+                <div class="hero-buttons">
+
+
+                    <a 
+                        href="habitaciones.html"
+                        class="btn btn-primary"
+                    >
+
+                        <i class="fa-solid fa-house"></i>
+
+                        Ver habitaciones
+
+                    </a>
+
+
+
+
+                    <a 
+                        href="contacto.html"
+                        class="btn btn-secondary"
+                    >
+
+                        Contactar
+
+                    </a>
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <!-- ==============================
+         SEARCH
+    =============================== -->
+
+
+    <section class="container">
+
+
+        <div class="search-box">
+
+
+            <div class="search-item">
+
+
+                <label>
+                    Ubicación
+                </label>
+
+
+                <input
+                    id="search-location"
+                    type="text"
+                    placeholder="Ejemplo: Querétaro"
+                >
+
+
+            </div>
+
+
+
+
+
+            <div class="search-item">
+
+
+                <label>
+                    Tipo de habitación
+                </label>
+
+
+                <select id="room-type">
+
+
+                    <option value="all">
+                        Todas
+                    </option>
+
+
+                    <option value="individual">
+                        Individual
+                    </option>
+
+
+                    <option value="shared">
+                        Compartida
+                    </option>
+
+
+                </select>
+
+
+            </div>
+
+
+
+
+
+            <div class="search-item">
+
+
+                <label>
+                    Precio máximo
+                </label>
+
+
+                <select id="price-range">
+
+
+                    <option value="all">
+                        Todos
+                    </option>
+
+
+                    <option value="3000">
+                        $3000
+                    </option>
+
+
+                    <option value="5000">
+                        $5000
+                    </option>
+
+
+                </select>
+
+
+            </div>
+
+
+
+
+
+            <div class="search-item">
+
+
+                <button class="btn btn-primary">
+
+                    Buscar
+
+                </button>
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+    <!-- ==============================
+         BENEFITS SECTION
+    =============================== -->
+
+
+    <section class="section">
+
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+
+                <h2>
+
+                    ¿Por qué elegir Best Rentas?
+
+                </h2>
+
+
+                <p>
+
+                    Encuentra habitaciones seguras, cómodas y adaptadas a tus necesidades.
+
+                </p>
+
+
+            </div>
+
+
+
+
+
+            <div class="features">
+
+
+
+                <!-- Seguridad -->
+
+                <div class="feature-card">
+
+
+                    <div class="feature-icon">
+
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+
+                    </div>
+
+
+
+                    <h3>
+
+                        Seguridad
+
+                    </h3>
+
+
+
+                    <p>
+
+                        Habitaciones verificadas en lugares confiables.
+
+                    </p>
+
+
+                </div>
+
+
+
+
+
+                <!-- Ubicación -->
+
+
+                <div class="feature-card">
+
+
+                    <div class="feature-icon">
+
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+
+                    </div>
+
+
+
+                    <h3>
+
+                        Excelente ubicación
+
+                    </h3>
+
+
+
+                    <p>
+
+                        Cerca de universidades, empresas y zonas importantes.
+
+                    </p>
+
+
+                </div>
+
+
+
+
+
+                <!-- Precio -->
+
+
+                <div class="feature-card">
+
+
+                    <div class="feature-icon">
+
+
+                        <i class="fa-solid fa-wallet"></i>
+
+
+                    </div>
+
+
+
+                    <h3>
+
+                        Precios accesibles
+
+                    </h3>
+
+
+
+                    <p>
+
+                        Opciones para diferentes presupuestos.
+
+                    </p>
+
+
+                </div>
+
+
+
+
+
+                <!-- Atención -->
+
+
+                <div class="feature-card">
+
+
+                    <div class="feature-icon">
+
+
+                        <i class="fa-solid fa-headset"></i>
+
+
+                    </div>
+
+
+
+                    <h3>
+
+                        Atención rápida
+
+                    </h3>
+
+
+
+                    <p>
+
+                        Te ayudamos durante todo el proceso.
+
+                    </p>
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- ==============================
+         LOCATIONS SECTION
+    =============================== -->
+
+
+
+    <section class="section">
+
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+
+                <h2>
+
+                    Ubicaciones disponibles
+
+                </h2>
+
+
+
+                <p>
+
+                    Encuentra una habitación en las mejores ciudades.
+
+                </p>
+
+
+            </div>
+
+
+
+
+
+            <div class="features">
+
+
+
+
+
+                <div class="feature-card">
+
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-building"></i>
+
+                    </div>
+
+
+
+                    <h3>
+
+                        Querétaro
+
+                    </h3>
+
+
+
+                    <p>
+
+                        Ideal para estudiantes y profesionales.
+
+                    </p>
+
+
+                </div>
+
+
+
+
+
+
+
+                <div class="feature-card">
+
+
+                    <div class="feature-icon">
+
+
+                        <i class="fa-solid fa-landmark"></i>
+
+
+                    </div>
+
+
+
+                    <h3>
+
+                        San Miguel de Allende
+
+                    </h3>
+
+
+
+                    <p>
+
+                        Zona tranquila con estilo colonial.
+
+                    </p>
+
+
+                </div>
+
+
+
+
+
+
+
+                <div class="feature-card">
+
+
+                    <div class="feature-icon">
+
+
+                        <i class="fa-solid fa-water"></i>
+
+
+                    </div>
+
+
+
+                    <h3>
+
+                        Puerto Vallarta
+
+                    </h3>
+
+
+
+                    <p>
+
+                        Vive cerca del mar y disfruta la ciudad.
+
+                    </p>
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- ==============================
+         TESTIMONIALS SECTION
+    =============================== -->
+
+
+    <section class="section">
+
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+
+                <h2>
+
+                    Opiniones de nuestros clientes
+
+                </h2>
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="testimonials-grid">
+
+
+
+
+
+                <!-- Review 1 -->
+
+
+                <div class="testimonial-card">
+
+
+
+                    <div class="testimonial-stars">
+
+                        ★★★★★
+
+                    </div>
+
+
+
+                    <p class="testimonial-text">
+
+
+                        Encontré una habitación segura y muy cómoda.
+                        El proceso fue rápido y sencillo.
+
+
+                    </p>
+
+
+
+                    <div class="client">
+
+
+
+                        <div>
+
+
+                            <h4>
+
+                                Carlos
+
+                            </h4>
+
+
+                            <span>
+
+                                Querétaro
+
+                            </span>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+                <!-- Review 2 -->
+
+
+                <div class="testimonial-card">
+
+
+
+                    <div class="testimonial-stars">
+
+                        ★★★★★
+
+                    </div>
+
+
+
+                    <p class="testimonial-text">
+
+
+                        Excelente atención.
+                        Me ayudaron a encontrar una buena ubicación.
+
+
+                    </p>
+
+
+
+                    <div class="client">
+
+
+
+                        <div>
+
+
+                            <h4>
+
+                                María
+
+                            </h4>
+
+
+                            <span>
+
+                                San Miguel
+
+                            </span>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+                <!-- Review 3 -->
+
+
+                <div class="testimonial-card">
+
+
+
+                    <div class="testimonial-stars">
+
+                        ★★★★★
+
+                    </div>
+
+
+
+                    <p class="testimonial-text">
+
+
+                        Una excelente opción para trabajadores
+                        y estudiantes.
+
+
+                    </p>
+
+
+
+                    <div class="client">
+
+
+
+                        <div>
+
+
+                            <h4>
+
+                                Luis
+
+                            </h4>
+
+
+                            <span>
+
+                                Puerto Vallarta
+
+                            </span>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
+
+
+    <footer class="footer">
+
+
+        <div class="container">
+
+
+            <div class="footer-grid">
+
+
+
+
+
+                <!-- Company -->
+
+
+                <div>
+
+
+                    <h3>
+
+                        Best Rentas
+
+                    </h3>
+
+
+
+                    <p>
+
+                        Encuentra habitaciones cómodas,
+                        seguras y listas para vivir.
+
+                    </p>
+
+
+                </div>
+
+
+
+
+
+
+
+                <!-- Links -->
+
+
+                <div>
+
+
+                    <h3>
+
+                        Enlaces
+
+                    </h3>
+
+
+
+                    <ul class="footer-links">
+
+
+                        <li>
+
+                            <a href="index.html">
+
+                                Inicio
+
+                            </a>
+
+                        </li>
+
+
+
+
+                        <li>
+
+                            <a href="habitaciones.html">
+
+                                Habitaciones
+
+                            </a>
+
+                        </li>
+
+
+
+
+                        <li>
+
+                            <a href="ubicaciones.html">
+
+                                Ubicaciones
+
+                            </a>
+
+                        </li>
+
+
+
+
+                        <li>
+
+                            <a href="contacto.html">
+
+                                Contacto
+
+                            </a>
+
+                        </li>
+
+
+                    </ul>
+
+
+                </div>
+
+
+
+
+
+
+
+
+                <!-- Cities -->
+
+
+                <div>
+
+
+                    <h3>
+
+                        Ciudades
+
+                    </h3>
+
+
+
+                    <p>
+
+                        Querétaro
+
+                    </p>
+
+
+                    <p>
+
+                        San Miguel de Allende
+
+                    </p>
+
+
+                    <p>
+
+                        Puerto Vallarta
+
+                    </p>
+
+
+                </div>
+
+
+
+
+
+
+
+
+                <!-- Social -->
+
+
+                <div>
+
+
+                    <h3>
+
+                        Síguenos
+
+                    </h3>
+
+
+
+                    <div class="social-links">
+
+
+
+                        <a href="#">
+
+                            <i class="fab fa-facebook"></i>
+
+                        </a>
+
+
+
+
+                        <a href="#">
+
+                            <i class="fab fa-instagram"></i>
+
+                        </a>
+
+
+
+
+                        <a href="#">
+
+                            <i class="fab fa-tiktok"></i>
+
+                        </a>
+
+
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Footer Bottom -->
+
+
+            <div class="footer-bottom">
+
+
+                <p>
+
+
+                    © 
+                    
+                    <span id="year"></span>
+
+
+                    Best Rentas de Cuartos
+
+                    |
+
+                    Wilson Cardichon
+
+
+                </p>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+    <!-- ==============================
+         WHATSAPP FLOAT BUTTON
+    =============================== -->
+
+
+    <a
+
+        href="https://wa.me/524421234567"
+
+        class="whatsapp-btn"
+
+        target="_blank"
+
+        aria-label="Contactar por WhatsApp"
+
+
+    >
+
+
+        <i class="fab fa-whatsapp"></i>
+
+
+    </a>
+
+
+
+
+
+
+
+
+
+    <!-- ==============================
+         SCROLL TOP BUTTON
+    =============================== -->
+
+
+    <button
+
+        class="scroll-top"
+
+        aria-label="Volver arriba"
+
+    >
+
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+
+    </button>
+
+
+
+
+
+
+
+
+
+    <!-- ==============================
+         JAVASCRIPT FILES
+    =============================== -->
+
+
+
+    <script
+
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
+
+    </script>
+
+
+
+
+
+    <script src="js/script.js"></script>
+
+
+    <script src="js/filter.js"></script>
+
+
+    <script src="js/darkmode.js"></script>
+
+
+    <script src="js/gallery.js"></script>
+
+
+    <script src="js/language.js"></script>
+
+
+
+
+
+</body>
+
+
+</html>
+

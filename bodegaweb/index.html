@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bodega Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="top-row">
+    <button class="back-btn">← Back</button>
+    <div class="cart">🛒 <span id="cart-count">0</span></div>
+  </div>
+
+  <div class="logo">▲</div>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Buscar productos">
+  </div>
+
+  <div class="pickup">
+    📦 Pick up | Los Encinos El Marqués
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="section-title">
+      <h2>Tus productos</h2>
+    </div>
+
+    <div class="products" id="products">
+    </div>
+  </section>
+</main>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
