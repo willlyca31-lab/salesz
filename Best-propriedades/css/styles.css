@@ -2576,9 +2576,10 @@ p {
 .footer-links li {
 
 
-    margin-bottom:
+    margin-bottom: 12px;
 
-    12px;
+     justify-content:center;
+     align-items:center;
 
 
 }
