@@ -65,4 +65,9 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Error cargando rooms.json:", error);
         });
 
+        container.innerHTML = html;
+
+// Inicializar galería después de crear las habitaciones
+                   initGallery();
+
 });

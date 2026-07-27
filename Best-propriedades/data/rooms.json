@@ -4,7 +4,7 @@
         "title":"Habitación Ejecutiva",
         "city":"Querétaro",
         "location":"Colinas del Parque",
-        "price":4800,
+        "price":4999,
         "status":"Disponible",
         "image":"images/queretaro/q1.jpeg",
         "gallery":[
@@ -29,12 +29,12 @@
         "title":"Suite Colonial",
         "city":"San Miguel de Allende",
         "location":"Centro Histórico",
-        "price":5300,
+        "price":4999,
         "status":"Disponible",
-        "image":"images/sanmiguel/s1.jpeg",
+        "image":"images/san-miguel/s1.jpeg",
         "gallery":[
-            "images/sanmiguel/s1.jpg",
-            "images/sanmiguel/s2.jpg"
+            "images/san-miguel/s1.jpg",
+            "images/san-miguel/s2.jpg"
         ],
         "features":[
             "WiFi",
@@ -53,12 +53,12 @@
         "title":"Vista al Mar",
         "city":"Puerto Vallarta",
         "location":"Zona Hotelera",
-        "price":6200,
+        "price":4999,
         "status":"Última disponible",
-        "image":"images/vallarta/v1.jpg",
+        "image":"images/puerto-vallarta/v1.jpeg",
         "gallery":[
-            "images/vallarta/v1.jpg",
-            "images/vallarta/v2.jpg"
+            "images/puerto-vallarta/v1.jpeg",
+            "images/puerto-vallarta/v2.jpeg"
         ],
         "features":[
             "Aire acondicionado",
