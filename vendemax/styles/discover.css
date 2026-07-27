@@ -915,4 +915,9 @@ footer p {
     display: none;
 }
 
+.enlace-amarillo {
+    color: yellow;
+    text-decoration: none;
+}
+
 
