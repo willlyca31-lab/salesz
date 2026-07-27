@@ -426,7 +426,7 @@ if(contactForm){
 
 const animatedElements =
 document.querySelectorAll(
-    ".feature-card, .room-card, .testimonial-card"
+    ".card, .feature-card, .room-card, .testimonial-card, .location-detail, .contact-form-card, .contact-info-card, section"
 );
 
 
