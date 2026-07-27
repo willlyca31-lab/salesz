@@ -1,0 +1,73 @@
+[
+    {
+        "id":1,
+        "title":"Habitación Ejecutiva",
+        "city":"Querétaro",
+        "location":"Colinas del Parque",
+        "price":4800,
+        "status":"Disponible",
+        "image":"images/queretaro/q1.jpeg",
+        "gallery":[
+            "images/queretaro/q1.jpeg",
+            "images/queretaro/q2.jpeg",
+            "images/queretaro/q3.jpeg"
+        ],
+        "features":[
+            "WiFi",
+            "Cama matrimonial",
+            "Closet",
+            "Cocina equipada",
+            "Estacionamiento"
+        ],
+        "description":
+        "Ideal para estudiantes y profesionistas."
+    },
+
+
+    {
+        "id":2,
+        "title":"Suite Colonial",
+        "city":"San Miguel de Allende",
+        "location":"Centro Histórico",
+        "price":5300,
+        "status":"Disponible",
+        "image":"images/sanmiguel/s1.jpeg",
+        "gallery":[
+            "images/sanmiguel/s1.jpg",
+            "images/sanmiguel/s2.jpg"
+        ],
+        "features":[
+            "WiFi",
+            "Baño privado",
+            "Closet",
+            "Escritorio",
+            "Cocina"
+        ],
+        "description":
+        "Ambiente tranquilo con excelente ubicación."
+    },
+
+
+    {
+        "id":3,
+        "title":"Vista al Mar",
+        "city":"Puerto Vallarta",
+        "location":"Zona Hotelera",
+        "price":6200,
+        "status":"Última disponible",
+        "image":"images/vallarta/v1.jpg",
+        "gallery":[
+            "images/vallarta/v1.jpg",
+            "images/vallarta/v2.jpg"
+        ],
+        "features":[
+            "Aire acondicionado",
+            "WiFi",
+            "Smart TV",
+            "Cocina"
+        ],
+        "description":
+        "Perfecta para vivir cerca de la playa."
+    }
+
+]
