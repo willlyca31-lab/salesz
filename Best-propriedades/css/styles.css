@@ -3627,7 +3627,13 @@ p {
 
 
 
+    .footer-links {
 
+
+        justify-content:center;
+
+
+    }
 
 
 
@@ -4683,9 +4689,6 @@ body.dark-mode p {
 
 
 }
-
-
-
 
 
 
