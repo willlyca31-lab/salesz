@@ -3625,7 +3625,9 @@ p {
 
     }
 
-
+    .footer-title {
+        text-align: center;
+    }
 
     .footer-links {
 
